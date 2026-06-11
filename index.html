@@ -1,0 +1,1045 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deepak Kumar C — Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ── LOGO PRELOADER (Framer LogoPreloader) ── -->
+    <div
+      id="loadingScreen"
+      class="lp-screen"
+      role="status"
+      aria-label="Loading portfolio"
+    >
+      <div class="lp-logo" id="lpLogo">
+        <span class="lp-ring"></span>
+        <span class="lp-text">DK.</span>
+      </div>
+    </div>
+
+    <!-- ── NAVBAR ── -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand logo" href="#hero">DK.</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="toggler-icon"></span>
+          <span class="toggler-icon"></span>
+          <span class="toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto gap-1">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certifications">Certs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <button
+            class="theme-toggle ms-3"
+            id="themeToggle"
+            aria-label="Toggle theme"
+            title="Toggle light / dark mode"
+          >
+            <span class="tt-track">
+              <span class="tt-knob">
+                <svg
+                  class="tt-icon tt-sun"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="12" cy="12" r="5" fill="#FF9100" />
+                  <path
+                    d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+                    stroke="#FF9100"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <svg
+                  class="tt-icon tt-moon"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                    fill="#6B6B6B"
+                  />
+                </svg>
+              </span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ── HERO ── -->
+    <section id="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="container hero-content">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-7" data-aos="fade-right" data-aos-duration="900">
+            <span class="badge-pill mb-3">Available for Opportunities</span>
+            <h1 class="hero-name">
+              Deepak<br /><span class="grad-text">Kumar C</span>
+            </h1>
+            <div class="hero-role">
+              <span class="role-static">I'm a </span>
+              <span class="role-animated" id="roleText"></span
+              ><span class="cursor">|</span>
+            </div>
+            <p class="hero-desc">
+              Software Engineer specializing in ISO 20022 MX message validation,
+              SWIFT MT/MX systems, and Java-based QA automation. Building
+              reliable fintech solutions from design to deployment.
+            </p>
+            <div class="hero-actions d-flex flex-wrap gap-3 mt-4">
+              <a href="#projects" class="btn-primary-custom">View My Work</a>
+              <a href="#contact" class="btn-outline-custom">Get In Touch</a>
+            </div>
+            <div class="hero-socials mt-5">
+              <a
+                href="https://linkedin.com/in/deepak-kumar-c-sns"
+                target="_blank"
+                title="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://github.com/Deepak03-C"
+                target="_blank"
+                title="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="mailto:deepaksekaran00@gmail.com" title="Email"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="col-lg-5 d-none d-lg-flex justify-content-center"
+            data-aos="fade-left"
+            data-aos-duration="900"
+          >
+            <div class="hero-card-wrapper">
+              <!-- CMS Showcase Card — profile edition -->
+              <div class="hc-sc-card" id="hcScCard">
+                <!-- Thumbnail: profile photo -->
+                <div class="hc-sc-main">
+                  <div class="hc-sc-thumb">
+                    <img
+                      src="image/Profile.jpg"
+                      alt="Deepak Kumar C"
+                      class="hc-sc-img"
+                    />
+                    <div class="hc-sc-footer">
+                      <div class="hc-sc-info">
+                        <div class="hc-sc-name">Deepak Kumar C</div>
+                        <div class="hc-sc-role">
+                          Software Engineer · QA · Fintech
+                        </div>
+                      </div>
+                      <a href="#contact" class="hc-sc-hire" id="hcScHire">
+                        Hire Me <i class="fas fa-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Expandable: stats, skills, location -->
+                <div class="hc-sc-body" id="hcScBody">
+                  <div class="hc-sc-body-inner">
+                    <div class="hc-sc-stats">
+                      <div class="hc-sc-stat">
+                        <span class="hc-stat-num">1+</span>
+                        <span class="hc-stat-label">Year Exp</span>
+                      </div>
+                      <div class="hc-sc-stat">
+                        <span class="hc-stat-num">3</span>
+                        <span class="hc-stat-label">Roles</span>
+                      </div>
+                      <div class="hc-sc-stat">
+                        <span class="hc-stat-num">4</span>
+                        <span class="hc-stat-label">Certs</span>
+                      </div>
+                    </div>
+                    <div class="hc-sc-rule"></div>
+                    <div class="hc-sc-headline">
+                      Building Reliable Fintech Systems.
+                    </div>
+                    <div class="hc-sc-chips">
+                      <span>ISO 20022</span>
+                      <span>Java</span>
+                      <span>Selenium</span>
+                      <span>Spring Boot</span>
+                    </div>
+                    <div class="hc-sc-location">
+                      <i class="fas fa-map-marker-alt"></i> Chennai, India
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Toggle button -->
+                <button class="hc-sc-toggle" id="hcScToggle">
+                  <span class="hc-sc-label">View Profile</span>
+                  <i class="fas fa-chevron-down hc-sc-chevron"></i>
+                </button>
+              </div>
+              <div class="hero-card-glow"></div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <span>Scroll</span>
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section id="about" class="section-pad">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">01 / About</span>
+          <h2 class="section-title">Who I Am</h2>
+        </div>
+        <div class="row g-5 align-items-center mt-2">
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
+            <div class="about-visual">
+              <div class="about-avatar-box">
+                <div class="about-avatar-initials">
+                  <img src="image/Profile.jpg" alt="Deepak Kumar C" />
+                </div>
+                <div class="about-avatar-ring ring-1"></div>
+                <div class="about-avatar-ring ring-2"></div>
+              </div>
+              <div class="about-info-card">
+                <div class="aic-row">
+                  <i class="fas fa-map-marker-alt"></i> Chennai, India
+                </div>
+                <div class="aic-row">
+                  <i class="fas fa-envelope"></i> deepaksekaran00@gmail.com
+                </div>
+                <div class="aic-row">
+                  <i class="fas fa-phone"></i> +91 8248676371
+                </div>
+                <div class="aic-row">
+                  <i class="fas fa-graduation-cap"></i> B.E CSE — CGPA 8.6/10
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+            <p class="about-text">
+              I'm a <strong class="accent-text">Software Engineer</strong> with
+              1+ year of end-to-end ownership across design, development,
+              testing, and release phases in the
+              <strong class="accent-text">banking &amp; fintech</strong> domain.
+            </p>
+            <p class="about-text mt-3">
+              My core expertise lies in
+              <strong class="accent-text"
+                >ISO 20022 MX message validation</strong
+              >, SWIFT MT/MX systems, and Java-based automation frameworks using
+              Selenium, TestNG, Rest Assured, and BDD Cucumber. I've contributed
+              to reducing defect leakage and manual regression effort through
+              structured automation.
+            </p>
+            <p class="about-text mt-3">
+              Beyond QA, I bring full-stack development experience with
+              <strong class="accent-text">Spring Boot, REST APIs</strong>, and a
+              passion for user-centric UI/UX design in Figma — bridging the gap
+              between product and engineering.
+            </p>
+            <div class="about-chips mt-4">
+              <span>Agile / Scrum</span>
+              <span>SDLC Ownership</span>
+              <span>Defect Lifecycle</span>
+              <span>API Testing</span>
+              <span>BDD</span>
+              <span>UI/UX Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TECH MARQUEE STRIP ── -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-row">
+        <div class="marquee-inner">
+          <span class="marquee-pill"><i class="fab fa-figma"></i> Figma</span>
+          <span class="marquee-pill"><i class="fab fa-jira"></i> Jira</span>
+          <span class="marquee-pill"><i class="fas fa-sitemap"></i> Agile</span>
+          <span class="marquee-pill"><i class="fab fa-java"></i> Java</span>
+          <span class="marquee-pill"><i class="fab fa-python"></i> Python</span>
+          <span class="marquee-pill"
+            ><i class="fas fa-robot"></i> Selenium</span
+          >
+          <span class="marquee-pill"><i class="fas fa-flask"></i> TestNG</span>
+          <span class="marquee-pill"
+            ><i class="fas fa-leaf"></i> Spring Boot</span
+          >
+          <span class="marquee-pill"
+            ><i class="fas fa-plug"></i> REST APIs</span
+          >
+          <span class="marquee-pill"
+            ><i class="fas fa-database"></i> MySQL</span
+          >
+          <span class="marquee-pill"><i class="fab fa-git-alt"></i> Git</span>
+          <span class="marquee-pill"><i class="fab fa-js"></i> JavaScript</span>
+          <span class="marquee-pill"
+            ><i class="fas fa-university"></i> ISO 20022</span
+          >
+          <span class="marquee-pill"
+            ><i class="fas fa-exchange-alt"></i> SWIFT MT/MX</span
+          >
+          <span class="marquee-pill"
+            ><i class="fas fa-seedling"></i> BDD Cucumber</span
+          >
+          <span class="marquee-pill"
+            ><i class="fas fa-theater-masks"></i> Playwright</span
+          >
+          <span class="marquee-pill"><i class="fab fa-html5"></i> HTML5</span>
+          <span class="marquee-pill"><i class="fas fa-cube"></i> Maven</span>
+          <span class="marquee-pill"
+            ><i class="fas fa-vial"></i> Rest Assured</span
+          >
+          <span class="marquee-pill"
+            ><i class="fas fa-layer-group"></i> Hibernate</span
+          >
+          <!-- duplicate for seamless loop -->
+          <span class="marquee-pill"><i class="fab fa-figma"></i> Figma</span>
+          <span class="marquee-pill"><i class="fab fa-jira"></i> Jira</span>
+          <span class="marquee-pill"><i class="fas fa-sitemap"></i> Agile</span>
+          <span class="marquee-pill"><i class="fab fa-java"></i> Java</span>
+          <span class="marquee-pill"><i class="fab fa-python"></i> Python</span>
+          <span class="marquee-pill"
+            ><i class="fas fa-robot"></i> Selenium</span
+          >
+          <span class="marquee-pill"><i class="fas fa-flask"></i> TestNG</span>
+          <span class="marquee-pill"
+            ><i class="fas fa-leaf"></i> Spring Boot</span
+          >
+          <span class="marquee-pill"
+            ><i class="fas fa-plug"></i> REST APIs</span
+          >
+          <span class="marquee-pill"
+            ><i class="fas fa-database"></i> MySQL</span
+          >
+          <span class="marquee-pill"><i class="fab fa-git-alt"></i> Git</span>
+          <span class="marquee-pill"><i class="fab fa-js"></i> JavaScript</span>
+          <span class="marquee-pill"
+            ><i class="fas fa-university"></i> ISO 20022</span
+          >
+          <span class="marquee-pill"
+            ><i class="fas fa-exchange-alt"></i> SWIFT MT/MX</span
+          >
+          <span class="marquee-pill"
+            ><i class="fas fa-seedling"></i> BDD Cucumber</span
+          >
+          <span class="marquee-pill"
+            ><i class="fas fa-theater-masks"></i> Playwright</span
+          >
+          <span class="marquee-pill"><i class="fab fa-html5"></i> HTML5</span>
+          <span class="marquee-pill"><i class="fas fa-cube"></i> Maven</span>
+          <span class="marquee-pill"
+            ><i class="fas fa-vial"></i> Rest Assured</span
+          >
+          <span class="marquee-pill"
+            ><i class="fas fa-layer-group"></i> Hibernate</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- ── SKILLS ── -->
+    <section id="skills" class="section-pad section-dark">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">02 / Skills</span>
+          <h2 class="section-title">Technical Arsenal</h2>
+        </div>
+        <div class="row g-4 mt-3">
+          <div
+            class="col-md-6 col-xl-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="skill-card">
+              <div class="skill-card-icon">
+                <i class="fas fa-university"></i>
+              </div>
+              <h5 class="skill-card-title">Banking &amp; Fintech</h5>
+              <div class="skill-tags">
+                <span>ISO 20022 (MX)</span><span>SWIFT MT/MX</span
+                ><span>XSD Schema</span> <span>CHAPS</span><span>T2</span
+                ><span>CHIPS</span><span>FED</span><span>CBPR+</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-xl-4"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div class="skill-card">
+              <div class="skill-card-icon"><i class="fas fa-robot"></i></div>
+              <h5 class="skill-card-title">Test Automation</h5>
+              <div class="skill-tags">
+                <span>Selenium</span><span>Playwright</span><span>TestNG</span
+                ><span>JUnit</span> <span>Rest Assured</span
+                ><span>BDD Cucumber</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-xl-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="skill-card">
+              <div class="skill-card-icon"><i class="fas fa-server"></i></div>
+              <h5 class="skill-card-title">Backend</h5>
+              <div class="skill-tags">
+                <span>Spring Boot</span><span>Hibernate</span
+                ><span>Servlets</span> <span>JDBC</span><span>REST APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-xl-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="skill-card">
+              <div class="skill-card-icon"><i class="fas fa-code"></i></div>
+              <h5 class="skill-card-title">Languages &amp; Frontend</h5>
+              <div class="skill-tags">
+                <span>Java</span><span>SQL</span><span>HTML5</span
+                ><span>CSS3</span> <span>JavaScript</span><span>Bootstrap</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-xl-4"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div class="skill-card">
+              <div class="skill-card-icon"><i class="fas fa-database"></i></div>
+              <h5 class="skill-card-title">Database &amp; Build</h5>
+              <div class="skill-tags">
+                <span>MySQL</span><span>PL/SQL</span><span>Maven</span
+                ><span>Git</span> <span>GitHub</span><span>GitLab</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-xl-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="skill-card">
+              <div class="skill-card-icon"><i class="fas fa-tools"></i></div>
+              <h5 class="skill-card-title">Tools &amp; Methodologies</h5>
+              <div class="skill-tags">
+                <span>Figma</span><span>Jira</span><span>IntelliJ</span
+                ><span>Eclipse</span> <span>VS Code</span
+                ><span>MySQL Workbench</span> <span>Agile</span
+                ><span>Scrum</span><span>SDLC</span
+                ><span>Defect Lifecycle Management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE ── -->
+    <section id="experience" class="section-pad">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">03 / Experience</span>
+          <h2 class="section-title">Career Timeline</h2>
+        </div>
+        <div class="timeline mt-5">
+          <!-- Framer Progress Bar: 2px scroll-driven vertical fill -->
+          <div class="tl-progress-track" aria-hidden="true">
+            <div class="tl-progress-fill" id="tlProgressFill"></div>
+          </div>
+
+          <!-- Role 1 -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="tc-header">
+                <div>
+                  <h5 class="tc-role">
+                    Software Engineer — QA Automation &amp; Payment Validation
+                  </h5>
+                  <div class="tc-company">
+                    Ticking Minds Technology Solutions
+                  </div>
+                </div>
+                <span class="tc-date">Jan 2026 – Present</span>
+              </div>
+              <div class="tc-domain">
+                <i class="fas fa-tag"></i> Banking &amp; Financial Systems | ISO
+                20022 MX Message Validation
+              </div>
+              <ul class="tc-bullets">
+                <li>
+                  Designed and implemented end-to-end validation solutions for
+                  ISO 20022 MX messages (pacs.008, pacs.009, camt.053, camt.057,
+                  pain.001), covering field-level, XSD schema, and business-rule
+                  validations.
+                </li>
+                <li>
+                  Developed and enhanced a stub-based validation framework to
+                  simulate upstream and downstream payment-processing systems,
+                  enabling reliable end-to-end testing and message verification.
+                </li>
+                <li>
+                  Built transformation components to convert manual input data
+                  into ISO 20022 MX-compliant XML messages with accurate tag
+                  mapping, data formatting, and schema compliance.
+                </li>
+                <li>
+                  Implemented validation logic for critical payment attributes
+                  including IBAN, BIC, LEI, clearing system codes, settlement
+                  priorities, and transaction identifiers.
+                </li>
+                <li>
+                  Designed MT-to-MX conversion validation workflows, ensuring
+                  accurate field mapping between legacy SWIFT MT and ISO 20022
+                  MX message structures.
+                </li>
+                <li>
+                  Authored comprehensive test scenarios covering structured,
+                  hybrid, and unstructured address formats, edge cases, and
+                  regulatory requirements.
+                </li>
+                <li>
+                  Collaborated with BAs, developers, and QA teams to analyze
+                  defects, validate fixes, and enhance payment-message
+                  processing accuracy.
+                </li>
+              </ul>
+              <div class="tc-tags">
+                <span>ISO 20022</span><span>SWIFT MX</span><span>XSD</span
+                ><span>Python</span><span>FastAPI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 2 -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="150">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="tc-header">
+                <div>
+                  <h5 class="tc-role">
+                    Software Engineer — Quality Engineering
+                  </h5>
+                  <div class="tc-company">
+                    Ticking Minds Technology Solutions
+                  </div>
+                </div>
+                <span class="tc-date">Aug 2025 – Dec 2025</span>
+              </div>
+              <div class="tc-domain">
+                <i class="fas fa-tag"></i> Banking &amp; Financial Systems |
+                SWIFT Payment Messaging (MT &amp; MX)
+              </div>
+              <ul class="tc-bullets">
+                <li>
+                  Executed regression testing across two core banking
+                  application modules, ensuring system stability and functional
+                  correctness following enhancements and release deployments.
+                </li>
+                <li>
+                  Designed and validated financial transaction and compliance
+                  test samples supporting end-to-end workflow testing across
+                  international payment and clearing systems.
+                </li>
+                <li>
+                  Performed validation of banking and regulatory message
+                  scenarios including CHAPS, T2, CHIPS, FED, CBPR+, camt.057,
+                  and FATF compliance requirements.
+                </li>
+                <li>
+                  Validated transaction processing workflows to ensure data
+                  accuracy, consistency, business-rule compliance, and adherence
+                  to regulatory standards.
+                </li>
+                <li>
+                  Developed and executed automation scripts to improve
+                  regression coverage, increase testing efficiency, and reduce
+                  repetitive manual validation activities.
+                </li>
+                <li>
+                  Maintained test execution reports, validation documents, and
+                  Jira artifacts while supporting defect analysis,
+                  re-validation, and cross-functional quality assurance
+                  activities.
+                </li>
+              </ul>
+              <div class="tc-tags">
+                <span>CHAPS</span><span>T2</span><span>CBPR+</span
+                ><span>FATF</span><span>Jira</span><span>Selenium</span
+                ><span>TestNG</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Role 3 -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="tc-header">
+                <div>
+                  <h5 class="tc-role">
+                    Software Engineer — Application Development, UI/UX &amp; QA
+                  </h5>
+                  <div class="tc-company">
+                    Ticking Minds Technology Solutions
+                  </div>
+                </div>
+                <span class="tc-date">May 2025 – Aug 2025</span>
+              </div>
+              <div class="tc-domain">
+                <i class="fas fa-tag"></i> VISTAFLOW HRMS | Human Resource
+                Management System
+              </div>
+              <ul class="tc-bullets">
+                <li>
+                  Contributed to the development and enhancement of
+                  enterprise-scale HRMS modules by implementing business and
+                  functional requirements using Spring Boot, REST APIs, HTML,
+                  and CSS.
+                </li>
+                <li>
+                  Developed, optimized, and maintained application features
+                  while resolving functional issues to ensure system stability,
+                  performance, and usability.
+                </li>
+                <li>
+                  Designed user-centric UI/UX interfaces in Figma, and reusable
+                  design components aligned with business workflows and user
+                  requirements.
+                </li>
+                <li>
+                  Collaborated with developers and business stakeholders to
+                  ensure accurate implementation of UI designs and a seamless
+                  user experience across the application.
+                </li>
+                <li>
+                  Designed, reviewed, and executed smoke, functional, and
+                  regression test cases to validate application functionality
+                  and quality.
+                </li>
+                <li>
+                  Identified, documented, tracked, and verified defects
+                  throughout the defect lifecycle, working closely with
+                  cross-functional teams to ensure timely resolution.
+                </li>
+                <li>
+                  Participated in requirement analysis, enhancement validation,
+                  release testing, and deployment verification activities to
+                  support reliable and defect-free software releases.
+                </li>
+              </ul>
+              <div class="tc-tags">
+                <span>Spring Boot</span><span>Figma</span><span>REST APIs</span
+                ><span>Regression</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ── -->
+    <section id="projects" class="section-pad section-dark">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">04 / Projects</span>
+          <h2 class="section-title">Featured Work</h2>
+        </div>
+        <div class="row g-4 mt-3">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card">
+              <div class="pc-number">01</div>
+              <div class="pc-icon"><i class="fas fa-plane"></i></div>
+              <h4 class="pc-title">JETSETGO</h4>
+              <p class="pc-subtitle">Tours &amp; Travel Booking System</p>
+              <p class="pc-desc">
+                Architected a full-stack travel booking platform with a 6-table MySQL schema, 10 REST API endpoints, and dual-role authentication (user/admin), enabling seamless hotel and tour package discovery across 18 UI pages.
+              </p>
+              <div class="pc-highlights">
+                <div class="pc-highlight">
+                  <i class="fas fa-check-circle"></i> BLOB-based image storage supporting uploads up to 50MB
+                </div>
+                <div class="pc-highlight">
+                  <i class="fas fa-check-circle"></i> Dedicated admin panel for real-time catalog management
+                </div>
+                <div class="pc-highlight">
+                  <i class="fas fa-check-circle"></i> Spring Boot MVC with layered service-repository pattern
+                </div>
+                <div class="pc-highlight">
+                  <i class="fas fa-check-circle"></i> CORS-enabled APIs with sub-second async front-end response
+                </div>
+              </div>
+              <div class="pc-stack">
+                <span>Java</span><span>Spring Boot</span
+                ><span>Spring Data JPA</span><span>MySQL</span>
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span
+                ><span>Bootstrap</span>
+              </div>
+              <div class="pc-links">
+                <a
+                  href="https://github.com/Deepak03-C"
+                  target="_blank"
+                  class="pc-link"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card">
+              <div class="pc-number">02</div>
+              <div class="pc-icon"><i class="fas fa-cloud-sun"></i></div>
+              <h4 class="pc-title">Weather App</h4>
+              <p class="pc-subtitle">Real-Time Forecast Application</p>
+              <p class="pc-desc">
+                Built a real-time weather dashboard using vanilla JavaScript, consuming 2 chained OpenWeatherMap API endpoints (5-day forecast + air pollution) to render 10+ live metrics — temperature, humidity, wind speed, visibility, sunrise/sunset times, and a 5-scale Air Quality Index — per city search.
+              </p>
+              <div class="pc-highlights">
+                <div class="pc-highlight">
+                  <i class="fas fa-check-circle"></i> 5-day forecast via 3-hourly API intervals aggregated into daily summaries
+                </div>
+                <div class="pc-highlight">
+                  <i class="fas fa-check-circle"></i> Condition-aware dynamic backgrounds across 10 weather states
+                </div>
+                <div class="pc-highlight">
+                  <i class="fas fa-check-circle"></i> Zero-dependency SPA — no external JS frameworks
+                </div>
+                <div class="pc-highlight">
+                  <i class="fas fa-check-circle"></i> Auto-triggered AQI lookups via native fetch() promise chains
+                </div>
+              </div>
+              <div class="pc-stack">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span
+                ><span>OpenWeather API</span>
+              </div>
+              <div class="pc-links">
+                <a
+                  href="https://github.com/Deepak03-C"
+                  target="_blank"
+                  class="pc-link"
+                  ><i class="fab fa-github"></i> GitHub</a
+                >
+                <a href="#" class="pc-link pc-link-live"
+                  ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CERTIFICATIONS ── -->
+    <section id="certifications" class="section-pad">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">05 / Certifications</span>
+          <h2 class="section-title">Credentials</h2>
+        </div>
+        <div class="row g-4 mt-3">
+          <div
+            class="col-md-6 col-xl-3"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="cert-card">
+              <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+              <div class="cert-year">2026</div>
+              <h6 class="cert-title">ISO 20022 Essentials</h6>
+              <p class="cert-issuer">Alison</p>
+              <p class="cert-desc">
+                Global payment message standards — MX format, CBPR+, SWIFT
+                migration
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-xl-3"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div class="cert-card">
+              <div class="cert-icon"><i class="fas fa-brain"></i></div>
+              <div class="cert-year">2026</div>
+              <h6 class="cert-title">Kane AI Certification</h6>
+              <p class="cert-issuer">TestMu / LambdaTest</p>
+              <p class="cert-desc">
+                AI-assisted test case generation &amp; intelligent test
+                automation
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-xl-3"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="cert-card">
+              <div class="cert-icon"><i class="fas fa-bolt"></i></div>
+              <div class="cert-year">2026</div>
+              <h6 class="cert-title">HyperExecute</h6>
+              <p class="cert-issuer">TestMu / LambdaTest</p>
+              <p class="cert-desc">
+                Cloud-based parallel test execution &amp; CI/CD-integrated
+                orchestration
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="col-md-6 col-xl-3"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
+            <div class="cert-card">
+              <div class="cert-icon"><i class="fas fa-layer-group"></i></div>
+              <div class="cert-year">2024</div>
+              <h6 class="cert-title">Java Full Stack</h6>
+              <p class="cert-issuer">QSpiders, Chennai</p>
+              <p class="cert-desc">
+                HTML, CSS, JavaScript, Java, Spring Boot, REST APIs, and SDLC
+                practices
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EDUCATION ── -->
+    <section id="education" class="section-pad section-dark">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">06 / Education</span>
+          <h2 class="section-title">Academic Background</h2>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+            <div class="edu-card">
+              <div class="edu-icon"><i class="fas fa-university"></i></div>
+              <div class="edu-body">
+                <h4 class="edu-degree">
+                  B.E – Computer Science and Engineering
+                </h4>
+                <div class="edu-college">
+                  SNS College of Engineering, Coimbatore
+                </div>
+                <div class="edu-meta">
+                  <span><i class="fas fa-calendar"></i> 2020 – 2024</span>
+                  <span class="edu-cgpa"
+                    ><i class="fas fa-star"></i> CGPA: 8.6 / 10</span
+                  >
+                </div>
+                <div class="edu-courses">
+                  <span class="edu-course-label">Relevant Coursework</span>
+                  <div class="edu-course-tags">
+                    <span>Data Structures &amp; Algorithms</span>
+                    <span>DBMS</span>
+                    <span>Computer Networks</span>
+                    <span>Software Engineering</span>
+                    <span>OOP</span>
+                    <span>Operating Systems</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section id="contact" class="section-pad">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">07 / Contact</span>
+          <h2 class="section-title">Let's Connect</h2>
+        </div>
+        <div class="row g-5 mt-2 align-items-start">
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
+            <p class="contact-intro">
+              I'm open to new opportunities in fintech, banking, and QA
+              automation. Whether you have a role, a project, or just want to
+              say hi — my inbox is always open.
+            </p>
+            <div class="contact-links mt-4">
+              <a
+                href="mailto:deepaksekaran00@gmail.com"
+                class="contact-link-item"
+              >
+                <i class="fas fa-envelope"></i>
+                <span>deepaksekaran00@gmail.com</span>
+              </a>
+              <a href="tel:+918248676371" class="contact-link-item">
+                <i class="fas fa-phone"></i>
+                <span>+91 8248676371</span>
+              </a>
+              <a
+                href="https://linkedin.com/in/deepak-kumar-c-sns"
+                target="_blank"
+                class="contact-link-item"
+              >
+                <i class="fab fa-linkedin-in"></i>
+                <span>linkedin.com/in/deepak-kumar-c-sns</span>
+              </a>
+              <a
+                href="https://github.com/Deepak03-C"
+                target="_blank"
+                class="contact-link-item"
+              >
+                <i class="fab fa-github"></i>
+                <span>github.com/Deepak03-C</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+            <form class="contact-form" id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="cf-group">
+                    <label>Your Name</label>
+                    <input type="text" placeholder="John Doe" required />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="cf-group">
+                    <label>Email Address</label>
+                    <input
+                      type="email"
+                      placeholder="john@company.com"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="cf-group">
+                    <label>Subject</label>
+                    <input
+                      type="text"
+                      placeholder="Job Opportunity / Collaboration"
+                    />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="cf-group">
+                    <label>Message</label>
+                    <textarea
+                      rows="5"
+                      placeholder="Tell me about the opportunity or project..."
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn-primary-custom w-100">
+                    <i class="fas fa-paper-plane me-2"></i> Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-logo">DK.</div>
+          <p class="footer-text">
+            Designed &amp; Built by Deepak Kumar C · 2026
+          </p>
+          <div class="footer-socials">
+            <a href="https://linkedin.com/in/deepak-kumar-c-sns" target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://github.com/Deepak03-C" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="mailto:deepaksekaran00@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

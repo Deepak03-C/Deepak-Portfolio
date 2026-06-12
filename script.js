@@ -138,21 +138,43 @@ const typeRole = () => {
 typeRole();
 
 // ── Contact form handler ───────────────────────────────────
+// ── Contact form — web3forms ──────────────────────────────
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-  contactForm.addEventListener('submit', e => {
+  const btn    = document.getElementById('formSubmitBtn');
+  const result = document.getElementById('formResult');
+
+  contactForm.addEventListener('submit', async e => {
     e.preventDefault();
-    const btn = contactForm.querySelector('button[type="submit"]');
-    const original = btn.innerHTML;
-    btn.innerHTML = '<i class="fas fa-check me-2"></i> Message Sent!';
-    btn.style.background = '';
+    const originalHTML = btn.innerHTML;
     btn.disabled = true;
-    setTimeout(() => {
-      btn.innerHTML = original;
-      btn.style.background = '';
-      btn.disabled = false;
-      contactForm.reset();
-    }, 3000);
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i> Sending…';
+    result.style.display = 'none';
+
+    const data = new FormData(contactForm);
+
+    try {
+      const res  = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: data
+      });
+      const json = await res.json();
+
+      if (json.success) {
+        result.style.display = 'block';
+        result.innerHTML = '<div class="cf-success"><i class="fas fa-check-circle me-2"></i>Message sent! I\'ll get back to you soon.</div>';
+        contactForm.reset();
+      } else {
+        throw new Error(json.message || 'Submission failed');
+      }
+    } catch (err) {
+      result.style.display = 'block';
+      result.innerHTML = '<div class="cf-error"><i class="fas fa-exclamation-circle me-2"></i>Something went wrong. Please try again.</div>';
+    }
+
+    btn.disabled = false;
+    btn.innerHTML = originalHTML;
+    setTimeout(() => { result.style.display = 'none'; }, 6000);
   });
 }
 

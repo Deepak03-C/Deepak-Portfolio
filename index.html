@@ -966,45 +966,42 @@
             </div>
           </div>
           <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
-            <form class="contact-form" id="contactForm">
+            <form
+              class="contact-form"
+              id="contactForm"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <input type="hidden" name="access_key" value="ba5ecbb0-1ec8-454a-9638-2671747917e5" />
+              <input type="checkbox" name="botcheck" style="display:none" />
               <div class="row g-3">
                 <div class="col-md-6">
                   <div class="cf-group">
                     <label>Your Name</label>
-                    <input type="text" placeholder="John Doe" required />
+                    <input type="text" name="name" placeholder="John Doe" required />
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="cf-group">
                     <label>Email Address</label>
-                    <input
-                      type="email"
-                      placeholder="john@company.com"
-                      required
-                    />
+                    <input type="email" name="email" placeholder="john@company.com" required />
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="cf-group">
                     <label>Subject</label>
-                    <input
-                      type="text"
-                      placeholder="Job Opportunity / Collaboration"
-                    />
+                    <input type="text" name="subject" placeholder="Job Opportunity / Collaboration" />
                   </div>
                 </div>
                 <div class="col-12">
                   <div class="cf-group">
                     <label>Message</label>
-                    <textarea
-                      rows="5"
-                      placeholder="Tell me about the opportunity or project..."
-                      required
-                    ></textarea>
+                    <textarea name="message" rows="5" placeholder="Tell me about the opportunity or project..." required></textarea>
                   </div>
                 </div>
+                <div class="col-12" id="formResult" style="display:none"></div>
                 <div class="col-12">
-                  <button type="submit" class="btn-primary-custom w-100">
+                  <button type="submit" class="btn-primary-custom w-100" id="formSubmitBtn">
                     <i class="fas fa-paper-plane me-2"></i> Send Message
                   </button>
                 </div>

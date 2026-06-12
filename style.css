@@ -1331,6 +1331,27 @@ body.light .tt-moon { opacity: 0; }
 }
 .contact-link-item:hover i { transform: scale(1.15); }
 
+.cf-success, .cf-error {
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.cf-success {
+  background: rgba(34, 197, 94, 0.10);
+  border: 1px solid rgba(34, 197, 94, 0.30);
+  color: #4ade80;
+}
+.cf-error {
+  background: rgba(239, 68, 68, 0.10);
+  border: 1px solid rgba(239, 68, 68, 0.30);
+  color: #f87171;
+}
+body.light .cf-success { color: #16a34a; background: rgba(34,197,94,0.08); }
+body.light .cf-error   { color: #dc2626; background: rgba(239,68,68,0.08); }
+
 /* ── Infinite Tech Marquee Strip ─────────────────────────── */
 .marquee-strip {
   overflow: hidden;

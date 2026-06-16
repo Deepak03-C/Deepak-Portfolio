@@ -8,9 +8,12 @@
    ============================================================ */
 /* ── Framer LogoPreloader ──────────────────────────────── */
 .lp-screen {
-  position: fixed; inset: 0; z-index: 9999;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
   background: #0D0D0D;
-  display: flex; align-items: center; justify-content: center;
   transition: opacity 0.55s ease, visibility 0.55s ease;
 }
 .lp-screen.lp-done {
@@ -20,17 +23,18 @@
 }
 
 .lp-logo {
-  position: relative;
-  display: flex; align-items: center; justify-content: center;
+  position: fixed;
+  /* top & left set by JS using window.innerWidth/innerHeight */
   width: 120px; height: 120px;
+  display: flex; align-items: center; justify-content: center;
   will-change: transform, opacity;
-  transform: translateY(80px);
+  transform: translate(-50%, calc(-50% + 80px));
   opacity: 0;
   transition: transform 0.7s cubic-bezier(.7,.2,.2,1),
               opacity   0.7s cubic-bezier(.7,.2,.2,1);
 }
-.lp-logo.lp-in  { transform: translateY(0);    opacity: 1; }
-.lp-logo.lp-out { transform: translateY(-80px); opacity: 0; }
+.lp-logo.lp-in  { transform: translate(-50%, -50%);              opacity: 1; }
+.lp-logo.lp-out { transform: translate(-50%, calc(-50% - 80px)); opacity: 0; }
 
 .lp-ring {
   position: absolute; inset: 0;

@@ -8,6 +8,18 @@
   const logo   = document.getElementById('lpLogo');
   if (!screen || !logo) return;
 
+  // visualViewport gives the true visible area on mobile
+  // (excludes address bar, bottom nav, on-screen keyboard)
+  const vv = window.visualViewport;
+  const setCenter = () => {
+    const w = vv ? vv.width  : window.innerWidth;
+    const h = vv ? vv.height : window.innerHeight;
+    logo.style.left = (w / 2) + 'px';
+    logo.style.top  = (h / 2) + 'px';
+  };
+  setCenter();
+  if (vv) vv.addEventListener('resize', setCenter);
+
   // Phase 1: slide logo up into view (50ms matches Framer's init delay)
   setTimeout(() => logo.classList.add('lp-in'), 50);
 
